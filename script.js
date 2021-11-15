@@ -1,16 +1,17 @@
 const movieContainer = document.querySelector('.movie-container');
 const renderData = data => {
   const html = `
-        <div class="col-md-3">
-          <div class="card" style=" margin-top:20px;border-radius:30px ">
+        <div class="col-md-3 col-sm-6">
+          <div class="card" style=" margin-top:20px;border-radius:30px;">
             <img
               class="card-img-top"
               data-src="holder.js/291px180/"
               alt="127%x180"
               src="${data.flags['png']}"
               data-holder-rendered="true"
-              style="height: 180px; width: 100%; display: block; border-radius:30px"
+              style="height: 180px; width: 100%; display: block; border-radius:30px; border:1px solid black;"
             />
+            <hr style="border:1px solid black; width:50%;margin-left:25%">
             <div class="card-body">
               <h5 class="card-title">${data.name['common']}</h5>
               <p class="card-text">
