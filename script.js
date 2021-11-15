@@ -1,7 +1,7 @@
 const movieContainer = document.querySelector('.movie-container');
 const renderData = data => {
   const html = `
-        <div class="col-md-3 col-sm-6">
+        <div class="col-3">
           <div class="card" style=" margin-top:20px;border-radius:30px;">
             <img
               class="card-img-top"
